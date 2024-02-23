@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Weather App</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="weather-card">
+        <!-- search imput && button -->
+        <div class="search">
+          <input
+            type="search"
+            name="search-input"
+            id="search-input"
+            placeholder="enter city name"
+          />
+          <div class="search-btn">
+            <img src="images/search.png" alt="" />
+          </div>
+        </div>
+
+        <!-- information -->
+
+        <div class="error">
+          <h1>!</h1>
+          <h3>No city found</h3>
+        </div>
+
+        <div class="loader">
+          <div style="--i: 1"></div>
+          <div style="--i: 2"></div>
+          <div style="--i: 3"></div>
+          <div style="--i: 4"></div>
+          <div style="--i: 5"></div>
+        </div>
+
+        <div class="info">
+          <div class="weather-icon">
+            <img src="images/rain.png" id="weather-icon" alt="" />
+          </div>
+
+          <div class="temp-name">
+            <h1 id="temp">22°F</h1>
+            <h2 id="cityname">New York</h2>
+          </div>
+
+          <div class="other-info">
+            <div class="humidity">
+              <img src="images/humidity.png" alt="" />
+              <div class="more-info">
+                <p id="humidityPerc">50%</p>
+                <p>humidity</p>
+              </div>
+            </div>
+            <div class="humidity">
+              <img src="images/wind.png" alt="" />
+              <div class="more-info">
+                <p id="windSpeed">50Km/h</p>
+                <p>Wind</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
